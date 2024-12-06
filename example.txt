@@ -8,15 +8,20 @@ comment
 data_base_name := "db_test"
 base_url := "https://github.com/"
 
-database_config := {
-    host = "127.0.0.1";
-    port = 5432;
-    username = "admin";
-    password = "QTYUA3783";
-    url = .base_url.
-}
+{
+    database_config_1 = {
+        host = "127.0.0.1";
+        port = 5432;
+        username = "admin";
+        password = "QTYUA3783";
+        url = .base_url.;
+    }
 
-database := {
-    name = .data_base_name.
-    config = .database_config.
+    database_config_2 = {
+        host = "127.0.6.1";
+        port = 9999;
+        username = "admin";
+        password = "QTYUA3783";
+        url = .base_url.;
+    }
 }
